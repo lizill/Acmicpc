@@ -8,7 +8,7 @@ public class AplusB_4 {
 		int a = 0;
 		int b = 0;
 		
-		while(input.hasNextInt()) { // EOF(End of File) »ç¿ë
+		while(input.hasNextInt()) { // EOF(End of File)
 			a = input.nextInt();
 			b = input.nextInt();
 			System.out.println(a+b);

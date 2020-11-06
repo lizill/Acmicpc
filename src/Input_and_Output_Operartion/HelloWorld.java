@@ -14,7 +14,7 @@ public class HelloWorld {
 	}
 	
 	public static void welovekriii() {
-		System.out.println("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º\n°­ÇÑÄ£±¸ ´ëÇÑÀ°±º");
+		System.out.println("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°\nê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°");
 	}
 	
 	public static void cat() {
