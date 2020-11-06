@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class NumberLessThanX {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int n = input.nextInt(); // Á¤¼ö N
-		int x = input.nextInt(); // ¼ö¿­ X°³
+		int n = input.nextInt(); // ì •ìˆ˜ N
+		int x = input.nextInt(); // ìˆ˜ì—´ Xê°œ
 //		int trm = 0;
 		
 		Random rand = new Random();
-		int[] a = new int[n]; // ¼ö¿­
+		int[] a = new int[n]; // ìˆ˜ì—´
 		
 		for (int i=0; i<n; i++) {
 			a[i] = (rand.nextInt(n)+1);
@@ -28,7 +28,7 @@ public class NumberLessThanX {
 //			if(trm==0) {
 //				System.out.print(a[i] + " ");
 //			}
-		} // 1~nÀÇ Áßº¹µÇÁö¾Ê´Â ·£´ýÇÑ ¼ö¿­ 
+		} // 1~nì˜ ì¤‘ë³µë˜ì§€ì•ŠëŠ” ëžœë¤í•œ ìˆ˜ì—´ 
 		
 //		System.out.println();
 		for(int i=0; i<n; i++) {
