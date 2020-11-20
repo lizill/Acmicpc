@@ -11,5 +11,7 @@ public class Heikin {
 		for(int i=0; i<n; i++) {
 			grade[i] = input.nextInt();
 		}
+		
+		input.close();
 	}
 }
