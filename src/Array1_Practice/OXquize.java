@@ -1,29 +1,26 @@
 package Array1_Practice;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class OXquize {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int n = input.nextInt();
+	public static void main(String[] args) throws IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(bf.readLine());
+		
 		int score = 0;
 		int count = 1;
-		boolean ox = false;
-		
 		String[] oxStr = new String[n];
 		
 		for(int i=0; i<n; i++) {
-			oxStr[i] = input.nextLine();
+			oxStr[i] = bf.readLine();
 		}
 		
-		for(int i=0; i<n; i++) {
+		for(int i=0; i<oxStr.length; i++) {
 			for(int j=0; j<oxStr[i].length(); j++) {
-				if(ox) {
-					count++;
-				}
 				if(oxStr[i].charAt(j)=='O') {
 					score += count;
-					ox = true;
 					count++;
 				} else {
 					count = 1;
@@ -33,7 +30,5 @@ public class OXquize {
 			score = 0;
 			count = 1;
 		}
-		
-		input.close();
 	}
 }
