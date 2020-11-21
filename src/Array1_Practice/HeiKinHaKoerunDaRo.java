@@ -1,13 +1,11 @@
 package Array1_Practice;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class HeiKinHaKoerunDaRo {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		DecimalFormat form = new DecimalFormat("#.000");
 		double c = input.nextInt(); // 케이스
 		double[] n = new double[(int)c]; // 케이스의 첫번째 수 배열
 		double count =0;
@@ -36,8 +34,7 @@ public class HeiKinHaKoerunDaRo {
 				break;
 			}
 			winer[i] = count/n[i];
-			System.out.print(form.format(Math.round(winer[i]*100000)/1000.0));
-			System.out.println("%");
+			System.out.println(String.format("%.3f", winer[i]*100) + "%");
 		}
 		input.close();
 	}
