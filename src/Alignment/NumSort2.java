@@ -1,4 +1,4 @@
-package SortPractice;
+package Alignment;
 
 import java.util.Arrays;
 import java.util.Scanner;
